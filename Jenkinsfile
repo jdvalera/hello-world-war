@@ -19,7 +19,7 @@ pipeline {
     	}
         stage('Ansible Deploy') {
             steps {
-                sh "sudo ansible-playbook tomcat_deploy.yaml -i inventory"
+                sh "ansible-playbook tomcat_deploy.yaml -i inventory"
             }
         }
     }
