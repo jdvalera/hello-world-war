@@ -21,7 +21,6 @@ pipeline {
             steps {
                 ansiblePlaybook( 
                     playbook: 'tomcat_deploy.yaml',
-                    becomeUser: 'ubuntu',
                     credentialsId: '8beb1c00-0659-4013-ba79-f32be5238ce0') 
             }
         }
