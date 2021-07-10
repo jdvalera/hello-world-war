@@ -21,9 +21,8 @@ pipeline {
             steps {
                 ansiblePlaybook( 
                     playbook: 'tomcat_deploy.yaml',
-                    inventory: 'inventory', 
-                    credentialsId: '8beb1c00-0659-4013-ba79-f32be5238ce0',
-                    colorized: true) 
+                    inventory: 'inventory.ini', 
+                    credentialsId: '8beb1c00-0659-4013-ba79-f32be5238ce0') 
             }
         }
     }
